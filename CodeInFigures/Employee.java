@@ -1,11 +1,9 @@
-public class Employee
-{
+public class Employee{
    private int empNum;
    private double payRate;
    public int MAX_EMP_NUM = 9999;
    public double MAX_RATE = 60.00;
-   Employee(int num, double rate)
-   {
+   Employee(int num, double rate){
       if(num <= MAX_EMP_NUM)
          empNum = num;
       else
@@ -15,12 +13,10 @@ public class Employee
       else
          payRate = 0;
    }
-   public int getEmpNum()
-   {
+   public int getEmpNum(){
       return empNum;
    }
-   public double getPayRate()
-   {
+   public double getPayRate(){
       return payRate;
    }
 }

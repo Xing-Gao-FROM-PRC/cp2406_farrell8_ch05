@@ -1,8 +1,6 @@
 import java.util.Scanner;
-public class Payroll
-{
-   public static void main(String[] args)
-   {
+public class Payroll{
+   public static void main(String[] args){
       double rate;
       double hoursWorked;
       double regularPay;
@@ -14,13 +12,11 @@ public class Payroll
       hoursWorked = keyboard.nextDouble();
       System.out.print("What is your regular pay rate? ");
       rate = keyboard.nextDouble();
-      if(hoursWorked > FULL_WEEK)
-      {
+      if(hoursWorked > FULL_WEEK){
          regularPay = FULL_WEEK * rate;
          overtimePay = (hoursWorked - FULL_WEEK) * OT_RATE * rate;
       }
-      else
-      {
+      else{
          regularPay = hoursWorked * rate;
          overtimePay = 0.0;
       }

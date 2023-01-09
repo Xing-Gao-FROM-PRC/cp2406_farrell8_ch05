@@ -5,10 +5,8 @@
 // Valid and less than 500 - Automotive Department
 // Valid and 500 or higher Housewares Department
 import java.util.Scanner;
-public class DebugFive3
-{
-   public static void main (String args[])
-   {
+public class DebugFive3{
+   public static void main (String args[]){
       int item;
       String output;
       final int LOW = 11111;
@@ -20,15 +18,13 @@ public class DebugFive3
       if(item <= LOW)
          output = "Item number too low";
       else
-        if(item => HIGH)
-          output = "Item number too low";
+        if(item >= HIGH)
+          output = "Item number too high";
         else
-          if(item =< HIGH)
-             output > "Valid - in Automotive Department";
+          if(item <= CUTOFF)
+             output = "Valid - in Automotive Department";
           else
-             output = "Valid - Item in Housewares Department"
+             output = "Valid - Item in Housewares Department";
        System.out.println(output);
    }
 }
-
-
